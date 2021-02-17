@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Bai Xin\'s Personal Doc'
-copyright = '2021, Bai, Xin'
+copyright = '2021 - Bai, Xin'
 author = 'Bai, Xin'
 
 # The short X.Y version
-version = ''
+version = 'v0.01'
 # The full version, including alpha/beta/rc tags
-release = 'v0.01'
+release = 'alpha'
 
 
 # -- General configuration ---------------------------------------------------
