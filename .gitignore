@@ -1,0 +1,14 @@
+*.aux
+*.out
+*.bak
+*.log
+.texpadtmp
+*.~*
+*.md.tex
+*.synctex.gz
+*.toc
+*.markdown.in
+_build/*
+
+# xlsx temporary files
+~$*

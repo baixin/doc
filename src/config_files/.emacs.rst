@@ -1,0 +1,47 @@
+.emacs
+======
+
+.. code-block:: lisp
+
+    ;; .emacs
+
+    (custom-set-variables
+     ;; custom-set-variables was added by Custom.
+     ;; If you edit it by hand, you could mess it up, so be careful.
+     ;; Your init file should contain only one such instance.
+     ;; If there is more than one, they won't work right.
+     '(column-number-mode t)
+     '(diff-switches "-u")
+     '(inhibit-startup-screen t)
+     '(size-indication-mode t)
+     '(tool-bar-mode nil)
+     '(truncate-lines t)
+     '(verilog-auto-delete-trailing-whitespace t)
+     '(verilog-auto-newline nil))
+
+    ;;; uncomment for CJK utf-8 support for non-Asian users
+    ;; (require 'un-define)
+
+    ; This keystroke is usually bind to exit-emacs-save-all-buffers
+    ; Setting it to save-buffer prevents you from exiting emacs accidentially
+    (global-set-key "\C-x\C-c" 'save-buffer)
+
+    ; set tab to space
+    (setq-default indent-tabs-mode nil)
+
+    ; viper-mode
+    (setq viper-mode t)
+    (require 'viper)
+
+    (custom-set-faces
+     ;; custom-set-faces was added by Custom.
+     ;; If you edit it by hand, you could mess it up, so be careful.
+     ;; Your init file should contain only one such instance.
+     ;; If there is more than one, they won't work right.
+     )
+
+    (defun insert-current-date () (interactive)
+      ;; (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
+      (insert (shell-command-to-string "echo -n $(date)")))
+    ;; `C-u M-! date +"%B %e, %Y" RET'
+

@@ -1,0 +1,61 @@
+.bashrc
+=======
+
+.. code-block:: bash
+
+    # common aliases
+    alias a=alias
+    a ua=unalias
+    a u='source ~/.bashrc'
+    a w=which
+    a la='ll -a'
+    a l=less
+    a lll='ll | less'
+    a .=pwd
+    a e=cd
+    a em=emacs
+    a d='cd ..'
+    a fx=firefox
+    a h=history
+    a md=mkdir
+    a chm=chmod
+    a un=uname
+    a mdp='mkdir -p'
+    a duhs='du -hs'
+    a lns='ln -s'
+    a g=gvim
+    a v=vim
+    a rmf='rm -rf'
+    a cpr='cp -r'
+    a eb='cd ~/baixin'
+    a s=echo
+    a t=tree
+    a gr='grep -r'
+    a gri='grep -ir'
+    a grv='grep -v'
+    a dk=tkdiff
+
+    # gmake aliases
+    a gcl='gmake clean; gmake comp | tee comp.log'
+    a grl='gmake rung | tee run.log'
+
+    # git aliases
+    a gh='git --help'
+    a gts='git status'
+    a ga='git add'
+    a gaa='git add --all'
+    a gl='git log'
+    a gls='git log --pretty=oneline'
+    a gll='git log --pretty=format:"%h - %an, %ar : %s"'
+    a gc='git commit'
+    a gcm='git commit -m'
+    # a gcam='git commit -am'
+    a gd='git diff'
+    a gdt='git difftool'
+    a gtr='git remote'
+    a gp='git push origin master'
+    
+    # common variables
+    B=~/baixin
+    T=~/baixin/tmp
+    P=~/baixin/project
